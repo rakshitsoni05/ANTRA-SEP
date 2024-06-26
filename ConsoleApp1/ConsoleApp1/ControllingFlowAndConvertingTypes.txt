@@ -1,0 +1,47 @@
+1. What happens when you divide an int variable by 0?
+Gives a Runtime Exception System.DivideByZeroException, as division by zero is undefined.
+
+2. What happens when you divide a double variable by 0?
+Gives output as Infinity, -Infinity or NaN when numerator is positive, negative and 0 respectively.
+
+3. What happens when you overflow an int variable, that is, set it to a value beyond its
+range?
+It wraps around to the minimum value and continues from there. 
+
+4. What is the difference between x = y++; and x = ++y;?
+
+x = y++; -- The value of y is assigned to x, and then y is incremented by 1.
+x = ++y; -- y is incremented by 1, and then the new value of y is assigned to x.
+
+5. What is the difference between break, continue, and return when used inside a loop
+statement?
+break -- Exits the nearest enclosing loop or switch statement.
+continue -- Skips the remaining statements in the current iteration of the loop and proceeds to the next iteration.
+return -- Exits the current method and optionally returns a value. It terminates the loop and the entire method execution.
+
+6. What are the three parts of a for statement and which of them are required?
+
+Initialization-- Executed once at the beginning (int i = 0;).
+Condition -- Checked before each iteration (i < 10;).
+Iterator-- Executed at the end of each iteration (i++;).
+
+None of them are strictly required.
+
+7. What is the difference between the = and == operators?
+
+= It assigns the value on the right to the variable on the left.
+== It compares the values on both sides and returns true if they are equal and false otherwise.
+
+8. Does the following statement compile? for ( ; true; ) ;
+
+Yes, this statement compiles and creates an infinite loop. 
+The condition true is always satisfied, so the loop will run indefinitely.
+
+9. What does the underscore _ represent in a switch expression?
+
+the underscore _ acts as a discard pattern and matches any value not matched by previous cases. 
+It's similar to a default case in a traditional switch statement.
+
+10. What interface must an object implement to be enumerated over by using the foreach statement?
+
+IEnumerable interface.
