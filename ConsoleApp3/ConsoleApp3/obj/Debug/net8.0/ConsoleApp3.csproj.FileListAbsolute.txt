@@ -1,0 +1,15 @@
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/bin/Debug/net8.0/ConsoleApp3
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/bin/Debug/net8.0/ConsoleApp3.deps.json
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/bin/Debug/net8.0/ConsoleApp3.runtimeconfig.json
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/bin/Debug/net8.0/ConsoleApp3.dll
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/bin/Debug/net8.0/ConsoleApp3.pdb
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.AssemblyInfoInputs.cache
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.AssemblyInfo.cs
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.csproj.CoreCompileInputs.cache
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.sourcelink.json
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.dll
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/refint/ConsoleApp3.dll
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.pdb
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.genruntimeconfig.cache
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ref/ConsoleApp3.dll
