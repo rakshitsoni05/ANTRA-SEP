@@ -1,11 +1,4 @@
-/* Reset default browser styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Header styles */
 header {
     position: relative;
 }
@@ -18,9 +11,9 @@ header img {
 nav {
     background-color: #858282ed;
     color: #fff;
-    padding: 10px 20px; /* Increase padding for better spacing */
+    padding: 10px 20px; 
     position: relative;
-    width: 100%; /* Ensure nav spans entire width */
+    width: 100%; 
 }
 
 nav ul {
@@ -38,7 +31,7 @@ nav ul li a {
     font-size: 16px;
 }
 
-/* Main section styles */
+
 .main-section {
     display: flex;
     justify-content: space-between;
@@ -47,7 +40,7 @@ nav ul li a {
 
 .main-left {
     width: 70%;
-    margin-right: 20px; /* Add margin between main-left and main-right */
+    margin-right: 20px; 
 }
 
 .main-right {
@@ -73,14 +66,14 @@ nav ul li a {
 .main-left h2, .news h2, .messages h2 {
     margin-top: 0;
     margin-bottom: 10px;
-    color: green; /* Change heading color to green */
+    color: green; 
 }
 
 .news p, .messages p {
     margin-bottom: 10px;
 }
 
-/* Footer styles */
+
 footer {
     background-color: green;
     color: #fff;
@@ -97,7 +90,7 @@ footer {
 }
 
 .product img {
-    width: 100px; /* Adjust image size as needed */
+    width: 100px; 
     height: auto;
     margin-right: 20px;
 }
