@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperTutorial.Presentation", "DapperTutorial.Presentation\DapperTutorial.Presentation.csproj", "{2B7732DF-8D14-42F5-A832-10FBB2C30841}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperTutorial.Core", "DapperTutorial.Core\DapperTutorial.Core.csproj", "{21DC6693-A748-471D-AAEA-6C5F7CA24311}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperTutorial.Infrastructure", "DapperTutorial.Infrastructure\DapperTutorial.Infrastructure.csproj", "{F130D2D3-EB82-4329-98B8-04FBC3FF73AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B7732DF-8D14-42F5-A832-10FBB2C30841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7732DF-8D14-42F5-A832-10FBB2C30841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7732DF-8D14-42F5-A832-10FBB2C30841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7732DF-8D14-42F5-A832-10FBB2C30841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21DC6693-A748-471D-AAEA-6C5F7CA24311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21DC6693-A748-471D-AAEA-6C5F7CA24311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21DC6693-A748-471D-AAEA-6C5F7CA24311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21DC6693-A748-471D-AAEA-6C5F7CA24311}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F130D2D3-EB82-4329-98B8-04FBC3FF73AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F130D2D3-EB82-4329-98B8-04FBC3FF73AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F130D2D3-EB82-4329-98B8-04FBC3FF73AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F130D2D3-EB82-4329-98B8-04FBC3FF73AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

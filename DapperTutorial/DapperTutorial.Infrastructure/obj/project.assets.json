@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "DapperTutorial.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/DapperTutorial.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DapperTutorial.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DapperTutorial.Core/1.0.0": {
+      "type": "project",
+      "path": "../DapperTutorial.Core/DapperTutorial.Core.csproj",
+      "msbuildProject": "../DapperTutorial.Core/DapperTutorial.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "DapperTutorial.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/rakshitsoni/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/DapperTutorial.Core.csproj": {
+              "projectPath": "/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/DapperTutorial.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
