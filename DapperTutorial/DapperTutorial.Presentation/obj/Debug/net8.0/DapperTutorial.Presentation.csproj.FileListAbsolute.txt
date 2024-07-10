@@ -1,0 +1,15 @@
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/bin/Debug/net8.0/DapperTutorial.Presentation
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/bin/Debug/net8.0/DapperTutorial.Presentation.deps.json
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/bin/Debug/net8.0/DapperTutorial.Presentation.runtimeconfig.json
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/bin/Debug/net8.0/DapperTutorial.Presentation.dll
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/bin/Debug/net8.0/DapperTutorial.Presentation.pdb
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/obj/Debug/net8.0/DapperTutorial.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/obj/Debug/net8.0/DapperTutorial.Presentation.AssemblyInfoInputs.cache
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/obj/Debug/net8.0/DapperTutorial.Presentation.AssemblyInfo.cs
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/obj/Debug/net8.0/DapperTutorial.Presentation.csproj.CoreCompileInputs.cache
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/obj/Debug/net8.0/DapperTutorial.Presentation.sourcelink.json
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/obj/Debug/net8.0/DapperTutorial.Presentation.dll
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/obj/Debug/net8.0/refint/DapperTutorial.Presentation.dll
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/obj/Debug/net8.0/DapperTutorial.Presentation.pdb
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/obj/Debug/net8.0/DapperTutorial.Presentation.genruntimeconfig.cache
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Presentation/obj/Debug/net8.0/ref/DapperTutorial.Presentation.dll
