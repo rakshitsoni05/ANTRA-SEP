@@ -1,0 +1,14 @@
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/bin/Debug/net8.0/EntityFramework.Core.deps.json
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/bin/Debug/net8.0/EntityFramework.Core.runtimeconfig.json
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/bin/Debug/net8.0/EntityFramework.Core.dll
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/bin/Debug/net8.0/EntityFramework.Core.pdb
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/obj/Debug/net8.0/EntityFramework.Core.csproj.AssemblyReference.cache
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/obj/Debug/net8.0/EntityFramework.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/obj/Debug/net8.0/EntityFramework.Core.AssemblyInfoInputs.cache
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/obj/Debug/net8.0/EntityFramework.Core.AssemblyInfo.cs
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/obj/Debug/net8.0/EntityFramework.Core.csproj.CoreCompileInputs.cache
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/obj/Debug/net8.0/EntityFramework.Core.dll
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/obj/Debug/net8.0/refint/EntityFramework.Core.dll
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/obj/Debug/net8.0/EntityFramework.Core.pdb
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/obj/Debug/net8.0/EntityFramework.Core.genruntimeconfig.cache
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Core/obj/Debug/net8.0/ref/EntityFramework.Core.dll

@@ -1,0 +1,12 @@
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/bin/Debug/net8.0/DapperTutorial.Core.deps.json
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/bin/Debug/net8.0/DapperTutorial.Core.dll
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/bin/Debug/net8.0/DapperTutorial.Core.pdb
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/obj/Debug/net8.0/DapperTutorial.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/obj/Debug/net8.0/DapperTutorial.Core.AssemblyInfoInputs.cache
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/obj/Debug/net8.0/DapperTutorial.Core.AssemblyInfo.cs
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/obj/Debug/net8.0/DapperTutorial.Core.csproj.CoreCompileInputs.cache
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/obj/Debug/net8.0/DapperTutorial.Core.sourcelink.json
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/obj/Debug/net8.0/DapperTutorial.Core.dll
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/obj/Debug/net8.0/refint/DapperTutorial.Core.dll
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/obj/Debug/net8.0/DapperTutorial.Core.pdb
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/DapperTutorial/DapperTutorial.Core/obj/Debug/net8.0/ref/DapperTutorial.Core.dll

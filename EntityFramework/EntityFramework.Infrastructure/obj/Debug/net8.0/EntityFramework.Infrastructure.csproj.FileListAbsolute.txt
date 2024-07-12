@@ -1,0 +1,17 @@
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/bin/Debug/net8.0/EntityFramework.Infrastructure.deps.json
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/bin/Debug/net8.0/EntityFramework.Infrastructure.runtimeconfig.json
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/bin/Debug/net8.0/EntityFramework.Infrastructure.dll
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/bin/Debug/net8.0/EntityFramework.Infrastructure.pdb
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/bin/Debug/net8.0/EntityFramework.Core.dll
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/bin/Debug/net8.0/EntityFramework.Core.pdb
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/obj/Debug/net8.0/EntityFramework.Infrastructure.csproj.AssemblyReference.cache
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/obj/Debug/net8.0/EntityFramework.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/obj/Debug/net8.0/EntityFramework.Infrastructure.AssemblyInfoInputs.cache
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/obj/Debug/net8.0/EntityFramework.Infrastructure.AssemblyInfo.cs
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/obj/Debug/net8.0/EntityFramework.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/obj/Debug/net8.0/EntityFr.C7757ED8.Up2Date
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/obj/Debug/net8.0/EntityFramework.Infrastructure.dll
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/obj/Debug/net8.0/refint/EntityFramework.Infrastructure.dll
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/obj/Debug/net8.0/EntityFramework.Infrastructure.pdb
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/obj/Debug/net8.0/EntityFramework.Infrastructure.genruntimeconfig.cache
+/Users/het/RiderProjects/EntityFramework/EntityFramework.Infrastructure/obj/Debug/net8.0/ref/EntityFramework.Infrastructure.dll
