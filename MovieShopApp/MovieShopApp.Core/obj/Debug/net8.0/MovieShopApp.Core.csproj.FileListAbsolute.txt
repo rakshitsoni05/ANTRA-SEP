@@ -1,0 +1,15 @@
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/bin/Debug/net8.0/MovieShopApp.Core.deps.json
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/bin/Debug/net8.0/MovieShopApp.Core.runtimeconfig.json
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/bin/Debug/net8.0/MovieShopApp.Core.dll
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/bin/Debug/net8.0/MovieShopApp.Core.pdb
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/obj/Debug/net8.0/MovieShopApp.Core.csproj.AssemblyReference.cache
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/obj/Debug/net8.0/MovieShopApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/obj/Debug/net8.0/MovieShopApp.Core.AssemblyInfoInputs.cache
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/obj/Debug/net8.0/MovieShopApp.Core.AssemblyInfo.cs
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/obj/Debug/net8.0/MovieShopApp.Core.csproj.CoreCompileInputs.cache
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/obj/Debug/net8.0/MovieShopApp.Core.sourcelink.json
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/obj/Debug/net8.0/MovieShopApp.Core.dll
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/obj/Debug/net8.0/refint/MovieShopApp.Core.dll
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/obj/Debug/net8.0/MovieShopApp.Core.pdb
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/obj/Debug/net8.0/MovieShopApp.Core.genruntimeconfig.cache
+/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopApp.Core/obj/Debug/net8.0/ref/MovieShopApp.Core.dll
