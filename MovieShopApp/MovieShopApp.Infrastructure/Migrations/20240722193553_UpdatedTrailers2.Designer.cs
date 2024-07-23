@@ -12,8 +12,8 @@ using MovieShopApp.Infrastructure.Data;
 namespace MovieShopApp.Infrastructure.Migrations
 {
     [DbContext(typeof(MovieShopEfDbContext))]
-    [Migration("20240717045354_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20240722193553_UpdatedTrailers2")]
+    partial class UpdatedTrailers2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -88,6 +88,9 @@ namespace MovieShopApp.Infrastructure.Migrations
 
             modelBuilder.Entity("MovieShopApp.Core.Entities.MovieCasts", b =>
                 {
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
                     b.Property<int>("CastId")
                         .HasColumnType("int");
 
@@ -95,12 +98,9 @@ namespace MovieShopApp.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("MovieId")
-                        .HasColumnType("int");
+                    b.HasKey("MovieId", "CastId");
 
                     b.HasIndex("CastId");
-
-                    b.HasIndex("MovieId");
 
                     b.ToTable("MovieCasts");
                 });
@@ -129,64 +129,54 @@ namespace MovieShopApp.Infrastructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("BackDropUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(2084)");
 
-                    b.Property<decimal>("Budget")
+                    b.Property<decimal?>("Budget")
                         .HasColumnType("decimal(18,4)");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ImdbUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(2084)");
 
                     b.Property<string>("OriginalLanguage")
-                        .IsRequired()
                         .HasColumnType("nvarchar(64)");
 
                     b.Property<string>("Overview")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PosterUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(2084)");
 
-                    b.Property<decimal>("Price")
+                    b.Property<decimal?>("Price")
                         .HasColumnType("decimal(5,2)");
 
                     b.Property<DateTime>("ReleaseDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<decimal>("Revenue")
+                    b.Property<decimal?>("Revenue")
                         .HasColumnType("decimal(18,4)");
 
-                    b.Property<int>("Runtime")
+                    b.Property<int?>("Runtime")
                         .HasColumnType("int");
 
                     b.Property<string>("Tagline")
-                        .IsRequired()
                         .HasColumnType("nvarchar(512)");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("TmdbUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(2084)");
 
                     b.Property<string>("UbdatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -370,13 +360,13 @@ namespace MovieShopApp.Infrastructure.Migrations
             modelBuilder.Entity("MovieShopApp.Core.Entities.MovieCasts", b =>
                 {
                     b.HasOne("MovieShopApp.Core.Entities.Casts", "Cast")
-                        .WithMany()
+                        .WithMany("MovieCasts")
                         .HasForeignKey("CastId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("MovieShopApp.Core.Entities.Movies", "Movie")
-                        .WithMany()
+                        .WithMany("MovieCasts")
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -446,7 +436,7 @@ namespace MovieShopApp.Infrastructure.Migrations
             modelBuilder.Entity("MovieShopApp.Core.Entities.Trailers", b =>
                 {
                     b.HasOne("MovieShopApp.Core.Entities.Movies", "Movie")
-                        .WithMany()
+                        .WithMany("Trailers")
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -471,6 +461,18 @@ namespace MovieShopApp.Infrastructure.Migrations
                     b.Navigation("Role");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("MovieShopApp.Core.Entities.Casts", b =>
+                {
+                    b.Navigation("MovieCasts");
+                });
+
+            modelBuilder.Entity("MovieShopApp.Core.Entities.Movies", b =>
+                {
+                    b.Navigation("MovieCasts");
+
+                    b.Navigation("Trailers");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations.Schema;
+using MovieShopApp.Core.Model.Response;
 
 namespace MovieShopApp.Core.Entities;
 
@@ -45,4 +46,13 @@ public class Movies
     
     public string? UbdatedBy { get; set; }
     public DateTime? UpdatedDate { get; set; }
+    
+    public ICollection<MovieCasts> MovieCasts { get; set; }
+    public ICollection<Trailers> Trailers { get; set; }
+    
+    public ICollection<MovieGenres>? MovieGenres { get; set; }
+    
+    public ICollection<Favorites>? Favorites { get; set; }
+    public ICollection<Reviews>? Reviews { get; set; }
+    public ICollection<Purchases>? Purchases { get; set; }
 }

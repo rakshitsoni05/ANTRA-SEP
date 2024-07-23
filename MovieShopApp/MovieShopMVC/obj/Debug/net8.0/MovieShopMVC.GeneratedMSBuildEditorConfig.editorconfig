@@ -26,12 +26,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopMVC/Views/Casts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FzdHMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopMVC/Views/Movies/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopMVC/Views/Movies/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL2luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopMVC/Views/Movies/MoviesByGenre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL01vdmllc0J5R2VucmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopMVC/Views/Shared/Components/Genres/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvR2VucmVzL0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/rakshitsoni/Desktop/ANTRA SEP/ANTRA-SEP/MovieShopApp/MovieShopMVC/Views/Shared/Error.cshtml]

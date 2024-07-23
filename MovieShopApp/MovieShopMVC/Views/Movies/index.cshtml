@@ -1,0 +1,27 @@
+@model IEnumerable<MovieResponseModel>
+
+<h2> Movie List</h2>
+
+@if (Model != null && Model.Any())
+{
+<div class="row">
+    @foreach (var item in Model)
+    {
+    <div class="col-md-4">
+        <a href="@Url.Action("Details", "Movies", new { id = item.Id })" style="text-decoration: none; color: inherit;">
+        <div class="card mb-4 shadow-sm">
+            <img src="@item.BackDropUrl" class="card-img-top" alt="@item.Title">
+            <div class="card-body">
+                <h5 class="card-title">@item.Title</h5>
+                <p class="card-text">@item.Tagline</p>
+            </div>
+        </div>
+        </a>
+    </div>
+    }
+</div>
+}
+else
+{
+<p>No movies available.</p>
+}

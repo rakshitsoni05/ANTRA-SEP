@@ -12,4 +12,6 @@ public class Casts
     public string ProfilePath { get; set; }
     public string TmdbUrl { get; set; }
     
+    public ICollection<MovieCasts> MovieCasts { get; set; }
+    
 }

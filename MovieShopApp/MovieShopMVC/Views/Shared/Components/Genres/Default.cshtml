@@ -1,0 +1,11 @@
+
+@model IEnumerable<MovieShopApp.Core.Entities.Genres>
+
+<form id="genre-form" method="get" asp-controller="Movies" asp-action="MoviesByGenre" class="form-inline my-2 my-lg-0">
+    <select id="genre-dropdown" name="id" class="form-control mr-sm-2" onchange="location.href=this.value;">
+        <option value="" disabled selected>Select Genre</option>
+        @foreach (var genre in Model) {
+            <option value="@Url.Action("MoviesByGenre", "Movies", new { id = genre.Id, pageNumber = 1, pageSize = 30 })">@genre.Name</option>
+        }
+    </select>
+</form>

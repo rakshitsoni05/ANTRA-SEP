@@ -12,8 +12,8 @@ using MovieShopApp.Infrastructure.Data;
 namespace MovieShopApp.Infrastructure.Migrations
 {
     [DbContext(typeof(MovieShopEfDbContext))]
-    [Migration("20240717051327_MoviesNullableFields2")]
-    partial class MoviesNullableFields2
+    [Migration("20240722193003_UpdatedTrailers")]
+    partial class UpdatedTrailers
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -88,6 +88,9 @@ namespace MovieShopApp.Infrastructure.Migrations
 
             modelBuilder.Entity("MovieShopApp.Core.Entities.MovieCasts", b =>
                 {
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
                     b.Property<int>("CastId")
                         .HasColumnType("int");
 
@@ -95,12 +98,9 @@ namespace MovieShopApp.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("MovieId")
-                        .HasColumnType("int");
+                    b.HasKey("MovieId", "CastId");
 
                     b.HasIndex("CastId");
-
-                    b.HasIndex("MovieId");
 
                     b.ToTable("MovieCasts");
                 });
@@ -338,6 +338,32 @@ namespace MovieShopApp.Infrastructure.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("MovieShopApp.Core.Model.Response.TrailerResponseModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(2084)");
+
+                    b.Property<string>("TrailerUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(2084)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MovieId");
+
+                    b.ToTable("TrailerResponseModel");
+                });
+
             modelBuilder.Entity("MovieShopApp.Core.Entities.Favorites", b =>
                 {
                     b.HasOne("MovieShopApp.Core.Entities.Movies", "Movie")
@@ -360,13 +386,13 @@ namespace MovieShopApp.Infrastructure.Migrations
             modelBuilder.Entity("MovieShopApp.Core.Entities.MovieCasts", b =>
                 {
                     b.HasOne("MovieShopApp.Core.Entities.Casts", "Cast")
-                        .WithMany()
+                        .WithMany("MovieCasts")
                         .HasForeignKey("CastId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("MovieShopApp.Core.Entities.Movies", "Movie")
-                        .WithMany()
+                        .WithMany("MovieCasts")
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -461,6 +487,29 @@ namespace MovieShopApp.Infrastructure.Migrations
                     b.Navigation("Role");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("MovieShopApp.Core.Model.Response.TrailerResponseModel", b =>
+                {
+                    b.HasOne("MovieShopApp.Core.Entities.Movies", "Movie")
+                        .WithMany("Trailers")
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Movie");
+                });
+
+            modelBuilder.Entity("MovieShopApp.Core.Entities.Casts", b =>
+                {
+                    b.Navigation("MovieCasts");
+                });
+
+            modelBuilder.Entity("MovieShopApp.Core.Entities.Movies", b =>
+                {
+                    b.Navigation("MovieCasts");
+
+                    b.Navigation("Trailers");
                 });
 #pragma warning restore 612, 618
         }

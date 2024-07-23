@@ -23,31 +23,63 @@ public class MovieShopEfDbContext: DbContext
     public DbSet<Reviews> Reviews { get; set; }
     public DbSet<Purchases> Purchases { get; set; }
     public DbSet<UserRoles> UserRoles { get; set; }
+    
+   protected override void OnModelCreating(ModelBuilder modelBuilder) {
+            base.OnModelCreating(modelBuilder);
+       
+            modelBuilder.Entity<MovieGenres>()
+                .HasKey(mg => new { mg.MovieId, mg.GenreId });
 
-    // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    // {
-    //     var conn = new ConfigurationBuilder().AddJsonFile("appsettings.json")
-    //         .Build().GetConnectionString("MovieShopEfDb");
-    //
-    //     optionsBuilder.UseSqlServer(conn);
-    // }
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<Favorites>()
-            .HasNoKey();
-        modelBuilder.Entity<MovieCasts>()
-            .HasNoKey();
-        modelBuilder.Entity<MovieGenres>()
-            .HasNoKey();
-        modelBuilder.Entity<Purchases>()
-            .HasNoKey();
-        modelBuilder.Entity<Reviews>()
-            .HasNoKey();
-        modelBuilder.Entity<UserRoles>()
-            .HasNoKey();
+            modelBuilder.Entity<MovieGenres>()
+                .HasOne(mg => mg.Movie)
+                .WithMany(m => m.MovieGenres)
+                .HasForeignKey(mg => mg.MovieId);
 
+            modelBuilder.Entity<MovieGenres>()
+                .HasOne(mg => mg.Genre)
+                .WithMany(g => g.MovieGenres)
+                .HasForeignKey(mg => mg.GenreId);
+       
+            modelBuilder.Entity<MovieCasts>()
+                .HasKey(mc => new { mc.MovieId, mc.CastId });
 
-        base.OnModelCreating(modelBuilder);
-    }
+            modelBuilder.Entity<MovieCasts>()
+                .HasOne(mc => mc.Movie)
+                .WithMany(m => m.MovieCasts)
+                .HasForeignKey(mc => mc.MovieId);
+
+            modelBuilder.Entity<MovieCasts>()
+                .HasOne(mc => mc.Cast)
+                .WithMany(c => c.MovieCasts)
+                .HasForeignKey(mc => mc.CastId);
+
+            modelBuilder.Entity<Favorites>()
+                .HasKey(f => new { f.MovieId, f.UserId });
+
+            modelBuilder.Entity<Favorites>()
+                .HasOne(f => f.Movie)
+                .WithMany(m => m.Favorites)
+                .HasForeignKey(f => f.MovieId);
+       
+            modelBuilder.Entity<Reviews>()
+                .HasKey(r => new { r.MovieId, r.UserId });
+
+            modelBuilder.Entity<Reviews>()
+                .HasOne(r => r.Movie)
+                .WithMany(m => m.Reviews)
+                .HasForeignKey(r => r.MovieId);
+
+            modelBuilder.Entity<Purchases>()
+                .HasKey(p => new { p.MovieId, p.UserId });
+
+            modelBuilder.Entity<Purchases>()
+                .HasOne(p => p.Movie)
+                .WithMany(m => m.Purchases)
+                .HasForeignKey(p => p.MovieId);
+            
+            modelBuilder.Entity<UserRoles>()
+                .HasKey(ur => new { ur.UserId, ur.RoleId });
+
+        }
 
 }

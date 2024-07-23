@@ -12,8 +12,8 @@ using MovieShopApp.Infrastructure.Data;
 namespace MovieShopApp.Infrastructure.Migrations
 {
     [DbContext(typeof(MovieShopEfDbContext))]
-    [Migration("20240717051010_MoviesNullableFields")]
-    partial class MoviesNullableFields
+    [Migration("20240723045029_UpdatedGenres")]
+    partial class UpdatedGenres
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -62,7 +62,7 @@ namespace MovieShopApp.Infrastructure.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.HasIndex("MovieId");
+                    b.HasKey("MovieId", "UserId");
 
                     b.HasIndex("UserId");
 
@@ -88,6 +88,9 @@ namespace MovieShopApp.Infrastructure.Migrations
 
             modelBuilder.Entity("MovieShopApp.Core.Entities.MovieCasts", b =>
                 {
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
                     b.Property<int>("CastId")
                         .HasColumnType("int");
 
@@ -95,27 +98,24 @@ namespace MovieShopApp.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("MovieId")
-                        .HasColumnType("int");
+                    b.HasKey("MovieId", "CastId");
 
                     b.HasIndex("CastId");
-
-                    b.HasIndex("MovieId");
 
                     b.ToTable("MovieCasts");
                 });
 
             modelBuilder.Entity("MovieShopApp.Core.Entities.MovieGenres", b =>
                 {
-                    b.Property<int>("GenreId")
-                        .HasColumnType("int");
-
                     b.Property<int>("MovieId")
                         .HasColumnType("int");
 
-                    b.HasIndex("GenreId");
+                    b.Property<int>("GenreId")
+                        .HasColumnType("int");
 
-                    b.HasIndex("MovieId");
+                    b.HasKey("MovieId", "GenreId");
+
+                    b.HasIndex("GenreId");
 
                     b.ToTable("MovieGenres");
                 });
@@ -137,7 +137,7 @@ namespace MovieShopApp.Infrastructure.Migrations
                     b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ImdbUrl")
@@ -189,6 +189,9 @@ namespace MovieShopApp.Infrastructure.Migrations
                     b.Property<int>("MovieId")
                         .HasColumnType("int");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.Property<int>("PurchaseNumber")
                         .HasColumnType("int");
 
@@ -198,10 +201,7 @@ namespace MovieShopApp.Infrastructure.Migrations
                     b.Property<decimal>("TotalPrice")
                         .HasColumnType("decimal(5,2)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasIndex("MovieId");
+                    b.HasKey("MovieId", "UserId");
 
                     b.HasIndex("UserId");
 
@@ -210,11 +210,14 @@ namespace MovieShopApp.Infrastructure.Migrations
 
             modelBuilder.Entity("MovieShopApp.Core.Entities.Reviews", b =>
                 {
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<int>("MovieId")
                         .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<decimal>("Rating")
                         .HasColumnType("decimal(3,2)");
@@ -223,10 +226,7 @@ namespace MovieShopApp.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasIndex("MovieId");
+                    b.HasKey("MovieId", "UserId");
 
                     b.HasIndex("UserId");
 
@@ -278,15 +278,15 @@ namespace MovieShopApp.Infrastructure.Migrations
 
             modelBuilder.Entity("MovieShopApp.Core.Entities.UserRoles", b =>
                 {
-                    b.Property<int>("RoleId")
-                        .HasColumnType("int");
-
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.HasIndex("RoleId");
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
 
-                    b.HasIndex("UserId");
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("UserRoles");
                 });
@@ -341,7 +341,7 @@ namespace MovieShopApp.Infrastructure.Migrations
             modelBuilder.Entity("MovieShopApp.Core.Entities.Favorites", b =>
                 {
                     b.HasOne("MovieShopApp.Core.Entities.Movies", "Movie")
-                        .WithMany()
+                        .WithMany("Favorites")
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -360,13 +360,13 @@ namespace MovieShopApp.Infrastructure.Migrations
             modelBuilder.Entity("MovieShopApp.Core.Entities.MovieCasts", b =>
                 {
                     b.HasOne("MovieShopApp.Core.Entities.Casts", "Cast")
-                        .WithMany()
+                        .WithMany("MovieCasts")
                         .HasForeignKey("CastId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("MovieShopApp.Core.Entities.Movies", "Movie")
-                        .WithMany()
+                        .WithMany("MovieCasts")
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -379,13 +379,13 @@ namespace MovieShopApp.Infrastructure.Migrations
             modelBuilder.Entity("MovieShopApp.Core.Entities.MovieGenres", b =>
                 {
                     b.HasOne("MovieShopApp.Core.Entities.Genres", "Genre")
-                        .WithMany()
+                        .WithMany("MovieGenres")
                         .HasForeignKey("GenreId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("MovieShopApp.Core.Entities.Movies", "Movie")
-                        .WithMany()
+                        .WithMany("MovieGenres")
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -398,7 +398,7 @@ namespace MovieShopApp.Infrastructure.Migrations
             modelBuilder.Entity("MovieShopApp.Core.Entities.Purchases", b =>
                 {
                     b.HasOne("MovieShopApp.Core.Entities.Movies", "Movie")
-                        .WithMany()
+                        .WithMany("Purchases")
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -417,7 +417,7 @@ namespace MovieShopApp.Infrastructure.Migrations
             modelBuilder.Entity("MovieShopApp.Core.Entities.Reviews", b =>
                 {
                     b.HasOne("MovieShopApp.Core.Entities.Movies", "Movie")
-                        .WithMany()
+                        .WithMany("Reviews")
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -436,7 +436,7 @@ namespace MovieShopApp.Infrastructure.Migrations
             modelBuilder.Entity("MovieShopApp.Core.Entities.Trailers", b =>
                 {
                     b.HasOne("MovieShopApp.Core.Entities.Movies", "Movie")
-                        .WithMany()
+                        .WithMany("Trailers")
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -461,6 +461,31 @@ namespace MovieShopApp.Infrastructure.Migrations
                     b.Navigation("Role");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("MovieShopApp.Core.Entities.Casts", b =>
+                {
+                    b.Navigation("MovieCasts");
+                });
+
+            modelBuilder.Entity("MovieShopApp.Core.Entities.Genres", b =>
+                {
+                    b.Navigation("MovieGenres");
+                });
+
+            modelBuilder.Entity("MovieShopApp.Core.Entities.Movies", b =>
+                {
+                    b.Navigation("Favorites");
+
+                    b.Navigation("MovieCasts");
+
+                    b.Navigation("MovieGenres");
+
+                    b.Navigation("Purchases");
+
+                    b.Navigation("Reviews");
+
+                    b.Navigation("Trailers");
                 });
 #pragma warning restore 612, 618
         }

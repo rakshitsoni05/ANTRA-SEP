@@ -8,4 +8,6 @@ public class Genres
     [Column(TypeName = "nvarchar(24)")]
     public string Name { get; set; }
     
+    public ICollection<MovieGenres> MovieGenres { get; set; }
+    
 }

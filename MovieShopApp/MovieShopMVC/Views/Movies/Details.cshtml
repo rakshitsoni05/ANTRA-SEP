@@ -1,0 +1,73 @@
+@model MovieShopApp.Core.Entities.Movies
+
+@{
+   
+ViewData["Title"] = "Movie Details";
+}
+
+<div class="container-fluid p-0">
+    <div style="background-image: url('@Model.BackDropUrl'); background-size: cover; background-position: center; padding: 20px;">
+        <div style="background-color: rgba(0, 0, 0, 0.7); color: white; padding: 20px;">
+            <div style="display: flex; align-items: start;">
+                <img class="img-fluid" src="@Model.PosterUrl" alt="@Model.Title" style="max-width: 200px; margin-right: 20px;">
+                <div>
+                    <h2>@Model.Title</h2>
+                    <p>@Model.Tagline</p>
+                    <p><strong>Overview:</strong> @Model.Overview</p>
+                    <p><strong>IMDB URL:</strong> <a href="@Model.ImdbUrl" target="_blank" style="color: #fff;">@Model.ImdbUrl</a></p>
+                    <button type="button" class="btn btn-primary mb-2" >Buy Movie</button>
+                    <button type="button" class="btn btn-secondary mb-2" >Review</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h3 class="mt-4">MOVIE FACTS</h3>
+            <ul class="list-group mt-4">
+                <li class="list-group-item"><strong>Release Date:</strong> @Model.ReleaseDate.ToString("D")</li>
+                <li class="list-group-item"><strong>Revenue:</strong> @Model.Revenue.ToString()</li>
+                <li class="list-group-item"><strong>Budget:</strong> @Model.Budget.ToString()</li>
+            </ul>
+            <h3 class="mt-4">TRAILERS</h3>
+            <ul class="list-group">
+                @foreach (var trailer in Model.Trailers)
+                {
+                    <li class="list-group-item">
+                        <a href="@trailer.TrailerUrl" target="_blank">@trailer.Name</a>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h3>CAST</h3>
+            <ul class="list-group">
+                @foreach (var cast in Model.MovieCasts)
+                {
+                <li class="list-group-item d-flex align-items-center">
+                    <img src="@cast.Cast.ProfilePath" class="rounded-circle" alt="@cast.Cast.Name" style="width: 50px; height: 50px; object-fit: cover;">
+                    <span class="ml-2">@cast.Cast.Name </span>
+                    @* <a href="/cast/edit/@cast.Id" class="btn btn-primary btn-sm ml-auto">Edit</a> *@
+                </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .list-group-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .list-group-item img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-right: 1rem;
+    }
+</style>
